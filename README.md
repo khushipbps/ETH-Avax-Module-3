@@ -23,14 +23,14 @@ constructor(string memory name, string memory symbol, uint256 initialSupply) ERC
 ```
 
 2. Burn function is used to decrease the tokens
-```
+```solidity
  function burn(uint256 amount) external {
      _burn(msg.sender, amount);
  }
 ```
 
 3. Mint function is mainly used to increase tokens
-```
+```solidity
  function mint(uint256 amount) external onlyOwner {
      _mint(msg.sender, amount);
  }
